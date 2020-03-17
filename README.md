@@ -8,8 +8,9 @@ For method details, please refer to
   @inproceedings{masi2020structure,
       title={{L}earning {S}tructure via {C}onsensus for {F}ace {S}egmentation and {P}arsing},
       author={Masi, Iacopo and Mathai, Joe and AbdAlmageed, Wael},
-      journal={The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-      year={2020}
+      booktitle={The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+      year={2020},
+      organization={IEEE/CVF}
   }
 ```
 

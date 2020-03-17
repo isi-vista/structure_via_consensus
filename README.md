@@ -1,6 +1,9 @@
 # Learning Structure via Consensus for Face Segmentation and Parsing
+<img src="https://www.isi.edu/images/isi-logo.jpg" width="300"/> <img src="http://cvpr2020.thecvf.com/sites/default/files/CVPR_Logo_Horz2_web.jpg" width="300"/>
 
 This is the official repo for the Structure via Consensus for Face Segmentation and Parsing (CVPR 2020). 
+
+
 
 For method details, please refer to [this pre-print version of the paper on arxiv](https://arxiv.org/abs/1911.00957).
 
@@ -15,6 +18,9 @@ If you find our method useuful, please cite it as:
       organization={IEEE/CVF}
   }
 ```
+
+<img src="imgs/teaser.png" />
+<sub>More regular, smooth structure learned; (a) As the training progresses, our method learns more regular, smooth structure which yields a more regular mask when compared to the pixel-wise baseline (sample from the COFW test set); (b) less sparsity is confirmed by visualization of the error in the number of connected components between the predicted and annotated mask.  A higher weight on beta greatly decreases the sparsity of the masks (c) this effect is confirmed when inspecting qualitative samples from the COFW test set.</sub>
 
 # Overview
 The gist of the approach is an attempt to induce structure through smoothness in the pixel-wise prediction of a semantic segmentation network trained with a DCNN (Deep Convolutional Neural Networks); the smoothness is enforced for the task of occlusion detection thereby attempting to get occlusion predictions with a better, structured output.

@@ -2,7 +2,7 @@
 Towards Learning Structure via Consensus for Face Segmentation and Parsing
 
 
-# Licence
+# License
 The Software is made available for academic or non-commercial purposes only. The license is for a copy of the program for an unlimited term. Individuals requesting a license for commercial use must pay for a commercial license.
 
     USC Stevens Institute for Innovation 

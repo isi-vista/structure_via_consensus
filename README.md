@@ -22,7 +22,7 @@ Later on, the method is also used for other similar tasks such as face parsing w
 
 _Please, note here the scope is not to get state-of-the-art results on benchmarks yet seeking for a solution on how to enforce structure in the pixel-wise prediction of a DCNN and proving that inducing smoothness can be a feasible and promising direction._
 
-Other similar attempts following other ways are [this, for example, using CoordConv](https://papers.nips.cc/paper/8169-an-intriguing-failing-of-convolutional-neural-networks-and-the-coordconv-solution) or using [Adversarial Structure Matching method](https://jyhjinghwang.github.io/projects/asm.html)
+Other alternative, very recent attempts with the same objective are [this, for example, using CoordConv](https://papers.nips.cc/paper/8169-an-intriguing-failing-of-convolutional-neural-networks-and-the-coordconv-solution) or using [Adversarial Structure Matching method](https://jyhjinghwang.github.io/projects/asm.html)
 
 # Dependency
 The code is written in python and pytorch.

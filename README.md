@@ -1,5 +1,40 @@
-# structure_via_consensus
+# Towards Learning Structure via Consensus for Face Segmentation and Parsing
 Towards Learning Structure via Consensus for Face Segmentation and Parsing
+
+
+***
+This is the official repo for the Structure via Consensus for Face Segmentation and Parsing (CVPR2020). 
+For method details, please refer to 
+
+```
+  @inproceedings{masi2020structure,
+      title={Learning Structure via Consensus for Face Segmentation and Parsing},
+      author={Iacopo Masi, Joe Mathai, and Wael AbdAlmageed},
+      journal={The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+      year={2020}
+  }
+```
+
+***
+
+# Overview
+ManTraNet is a
+
+# Dependency
+The code is written in pytorch.
+  
+  - pytorch: 1.1.0
+  - python: 3.7.5
+  
+Other versions might also work, but not tested.
+
+# Demo
+One may simply download the repo and play with the provided ipython notebook. 
+
+Alternatively, one may play with the inference code using [this google colab link](https://colab.research.google.com/drive/1ai4kVlI6w9rREqqYnTfpk3gM3YX9k-Ek).
+
+# Contact
+For any paper related questions, please contact `masi@isi.edu`
 
 
 # License

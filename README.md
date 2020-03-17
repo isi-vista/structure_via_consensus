@@ -1,4 +1,4 @@
-# Towards Learning Structure via Consensus for Face Segmentation and Parsing
+# Learning Structure via Consensus for Face Segmentation and Parsing
 
 This is the official repo for the Structure via Consensus for Face Segmentation and Parsing (CVPR 2020). 
 

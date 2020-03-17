@@ -1,15 +1,13 @@
 # Towards Learning Structure via Consensus for Face Segmentation and Parsing
-Towards Learning Structure via Consensus for Face Segmentation and Parsing
-
 
 ***
-This is the official repo for the Structure via Consensus for Face Segmentation and Parsing (CVPR2020). 
+This is the official repo for the Structure via Consensus for Face Segmentation and Parsing (CVPR 2020). 
 For method details, please refer to 
 
 ```
   @inproceedings{masi2020structure,
-      title={Learning Structure via Consensus for Face Segmentation and Parsing},
-      author={Iacopo Masi, Joe Mathai, and Wael AbdAlmageed},
+      title={{L}earning {S}tructure via {C}onsensus for {F}ace {S}egmentation and {P}arsing},
+      author={Masi, Iacopo and Mathai, Joe and AbdAlmageed, Wael},
       journal={The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
       year={2020}
   }
@@ -18,26 +16,25 @@ For method details, please refer to
 ***
 
 # Overview
-ManTraNet is a
+...
 
 # Dependency
-The code is written in pytorch.
+The code is written in python and pytorch.
   
-  - pytorch: 1.1.0
-  - python: 3.7.5
+  - Pytorch: 1.1.0
+  - Python: 3.7.5
   
 Other versions might also work, but not tested.
 
 # Demo
 One may simply download the repo and play with the provided ipython notebook. 
 
-Alternatively, one may play with the inference code using [this google colab link](https://colab.research.google.com/drive/1ai4kVlI6w9rREqqYnTfpk3gM3YX9k-Ek).
+Alternatively, one may play with the inference code using [this Google Colab link](#).
 
 # Contact
 For any paper related questions, please contact `masi@isi.edu`
 
-
-# License
+# [License](LICENSE)
 The Software is made available for academic or non-commercial purposes only. The license is for a copy of the program for an unlimited term. Individuals requesting a license for commercial use must pay for a commercial license.
 
     USC Stevens Institute for Innovation 

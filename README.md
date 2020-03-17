@@ -1,7 +1,10 @@
 # Towards Learning Structure via Consensus for Face Segmentation and Parsing
 
 This is the official repo for the Structure via Consensus for Face Segmentation and Parsing (CVPR 2020). 
-For method details, please refer to 
+
+For method details, please refer to [this pre-print version of the paper on arxiv](https://arxiv.org/abs/1911.00957).
+
+If you find our method useuful, please cite it as:
 
 ```
   @inproceedings{masi2020structure,

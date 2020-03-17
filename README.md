@@ -17,7 +17,9 @@ If you find our method useuful, please cite it as:
 ```
 
 # Overview
-...
+The gist of the approach is an attempt to induce structure through smoothness in the pixel-wise prediction of a semantic segmentation network trained with a DCNN (Deep Convolutional Neural Networks); the smoothness is enforced for the task of occlusion detection thereby attempting to get occlusion predictions with a better, structured output.
+Later on, the method is also used for other similar tasks such as face parse prediction with 3 labels (skin, background, and facial hair).
+_Please, note here the scope is not to get state-of-the-art results on benchmarks yet seeking for a solution on how to enforce structure in the pixel-wise prediction of a DCNN and proving that inducing smoothness can be a feasible and promising direction._
 
 # Dependency
 The code is written in python and pytorch.

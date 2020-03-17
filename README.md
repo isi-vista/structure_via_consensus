@@ -1,5 +1,5 @@
 # Learning Structure via Consensus for Face Segmentation and Parsing
-<img src="https://www.isi.edu/images/isi-logo.jpg" width="300"/> <img src="http://cvpr2020.thecvf.com/sites/default/files/CVPR_Logo_Horz2_web.jpg" width="300"/>
+<img src="https://www.isi.edu/images/isi-logo.jpg" width="200"/>  <img src="http://cvpr2020.thecvf.com/sites/default/files/CVPR_Logo_Horz2_web.jpg" width="200"/>
 
 This is the official repo for the Structure via Consensus for Face Segmentation and Parsing (CVPR 2020). 
 
@@ -9,7 +9,7 @@ For method details, please refer to [this pre-print version of the paper on arxi
 
 If you find our method useuful, please cite it as:
 
-```
+```latex
   @inproceedings{masi2020structure,
       title={{L}earning {S}tructure via {C}onsensus for {F}ace {S}egmentation and {P}arsing},
       author={Masi, Iacopo and Mathai, Joe and AbdAlmageed, Wael},

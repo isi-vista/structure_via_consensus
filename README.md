@@ -20,7 +20,7 @@ If you find our method useuful, please cite it as:
 ```
 
 <img src="imgs/teaser.png" />
-<sub>More regular, smooth structure learned; (a) As the training progresses, our method learns more regular, smooth structure which yields a more regular mask when compared to the pixel-wise baseline (sample from the COFW test set); (b) less sparsity is confirmed by visualization of the error in the number of connected components between the predicted and annotated mask.  A higher weight on beta greatly decreases the sparsity of the masks (c) this effect is confirmed when inspecting qualitative samples from the COFW test set.</sub>
+<sub>More regular, smooth structure learned; (a) As the training progresses, our method learns more regular, smooth structure which yields a more regular mask when compared to the pixel-wise baseline (sample from the COFW test set); (b) less sparsity is confirmed by visualization of the error in the number of connected components between the predicted and annotated mask.  (c) A higher weight on beta greatly decreases the sparsity of the masks on average.</sub>
 
 # Overview
 The gist of the approach is an attempt to induce structure through smoothness in the pixel-wise prediction of a semantic segmentation network trained with a DCNN (Deep Convolutional Neural Networks); the smoothness is enforced for the task of occlusion detection thereby attempting to get occlusion predictions with a better, structured output.

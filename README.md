@@ -41,7 +41,7 @@ Other versions might also work, but not tested.
 # Demo
 One may simply download the repo and play with the provided ipython notebook. 
 
-Alternatively, one may play with the inference code using [this Google Colab link](#).
+Alternatively, one may play with the inference code using [this Google Colab link](https://colab.research.google.com/drive/1-FPLP9uktfW5lXZ0-BgaIoz8nVZZAgoa).
 
 # Contact
 For any paper related questions, please contact `masi@isi.edu`

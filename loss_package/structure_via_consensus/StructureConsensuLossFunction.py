@@ -112,9 +112,14 @@ class StructureConsensuLossFunction(nn.Module):
         prob = F.softmax(logit,dim=1) #NxCxHxW
         ## building the average
         idx_blob_t = idx_blob.unsqueeze(1).repeat(1,c,1,1)
-        idx_blob_c1 = idx_blob.unsqueeze(1)
         ## zeroing the probs not relevant to the blob
         prob_blob = prob*idx_blob_t.float() # NxCxHxW
+        ## here we sum up over the 2D dimensions to see if
+        ## there are some CC not used in a batch sample
+        ## for example we may have a batch that does not
+        ## contain the HAIR class so the sum below will
+        ## be zero in this case.
+        ## We keep track of those cases in zero_mask variable
         support_logit = idx_blob_t.sum(dim=(2,3)) # NxC
         zero_mask = (support_logit==0) #NxC
         ###############################################

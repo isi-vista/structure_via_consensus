@@ -38,10 +38,52 @@ The code is written in python and pytorch.
   
 Other versions might also work, but not tested.
 
-# Demo
+# New Loss Python package
+
+## Installation
+
+### Typical Install
+
+```
+pip install git+https://github.com/isi-vista/structure_via_consensus/loss_package
+```
+
+### Typical Usage
+
+```python
+from structure_via_consensus import StructureConsensuLossFunction 
+
+## Define new loss                                                                                                                                                                                         
+loss_func = StructureConsensuLossFunction(args.consensus_loss_alpha,                                                                                                                                       
+                                     args.consensus_loss_beta,                                                                                                                                             
+                                     reduce_pixel=args.reduce_pixel,                                                                                                                                       
+                                     reduce_pixel_kl=args.reduce_pixel_kl                                                                                                                                  
+) 
+
+for epoch in range(args.nepochs):                                                                                                                                                                          
+    for ib, batch in enumerate(train_dataloader):                                                                                                                                                          
+        img, mask_class, mask_sp = batch                                                                                                                                                                   
+        img = img.cuda()                                                                                                                                                                                   
+        mask_class = mask_class.cuda()                                                                                                                                                                     
+        mask_cc = mask_class.clone().cuda()                                                                                                                                                                
+
+        ## prediction                                                                                                                               
+        pred_mask = model(img)                                                                                                                                                                  
+
+        # calculate losses                                                                                                                                                                                 
+        loss = loss_func(pred_mask,mask_cc,mask_class)                                                                                                                                                 
+
+        # backpropogate                                                                                                                                                                                    
+        loss.backward() # compute the gradients and add them
+```
+
+# Part Label Dataset Demo
 One may simply download the repo and play with the provided ipython notebook. 
 
 Alternatively, one may play with the inference code using [this Google Colab link](https://colab.research.google.com/drive/1-FPLP9uktfW5lXZ0-BgaIoz8nVZZAgoa).
+
+<img src="imgs/pt_1.png" />
+<img src="imgs/pt_2.png" />
 
 # Contact
 For any paper related questions, please contact `masi@isi.edu`

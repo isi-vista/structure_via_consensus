@@ -100,7 +100,7 @@ mask_cc.shape is `[batch,1,size_h,size_w]`
 mask_class.shape is `[batch,1,size_h,size_w]`
 
 #### Hyper-params on the loss
-We shows that the hyper-param `beta` correlates with decreasing the sparsity of the ouput mask on average although in our experimentation when fine-tuning on PartLabel and COFW we found out that increasing `beta` too much may underfit the prediction to the labels. We used a cross-validated ratio of `alpha:beta` as `alpha=10,beta=5` although these values may be dataset dependent.
+We shows that the hyper-param `beta` correlates with decreasing the sparsity of the ouput mask on average although in our experimentation when fine-tuning on PartLabel and COFW we found out that increasing `beta` too much may underfit the prediction to the labels in our training time regime. We used a cross-validated ratio of `alpha:beta` as `alpha=10,beta=5` although these values may be dataset dependent.
 Also, it is important to notice that **all the metrics (pixe acc, IoU etc) currently considered in semantic segmentation** do not take sparsity or smoothness into consideration [nor countour measures](http://www.bmva.org/bmvc/2013/Papers/paper0032/paper0032.pdf).
 
 # Part Label Dataset Demo

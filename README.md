@@ -104,13 +104,11 @@ We shows that the hyper-param `beta` correlates with decreasing the sparsity of 
 Also, it is important to notice that **all the metrics (pixel acc., IoU, etc) currently considered in semantic segmentation** do not take sparsity or smoothness into consideration [nor countour measures](http://www.bmva.org/bmvc/2013/Papers/paper0032/paper0032.pdf).
 
 # Part Label Dataset Demo
-One may simply download the repo and play with the provided ipython notebook. 
+One may simply download the repo and play with the provided ipython notebook [eval_model_pt_labels_colab.ipynb].(eval_model_pt_labels_colab.ipynb).
 
 Alternatively, one may play with the inference code using [this Google Colab link](https://colab.research.google.com/drive/1-FPLP9uktfW5lXZ0-BgaIoz8nVZZAgoa).
 
-<img src="imgs/pt_1.png" />
-<img src="imgs/pt_2.png" />
-
+<img src="imgs/pt_1.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="imgs/pt_2.png" /> 
 # Contact
 For any paper related questions, please contact `masi@isi.edu` or open a Github issues above. Please, note that we do not provide software support besides simply replying to a few questions. Thank you for your understanding.
 

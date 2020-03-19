@@ -1,5 +1,5 @@
 # Learning Structure via Consensus for Face Segmentation and Parsing
-<img src="https://www.isi.edu/images/isi-logo.jpg" width="200"/>  <img src="http://cvpr2020.thecvf.com/sites/default/files/CVPR_Logo_Horz2_web.jpg" width="200"/>
+<img src="https://www.isi.edu/images/isi-logo.jpg" width="200"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://cvpr2020.thecvf.com/sites/default/files/CVPR_Logo_Horz2_web.jpg" width="200"/>
 
 This is the official repo for the Structure via Consensus for Face Segmentation and Parsing (CVPR 2020). 
 
@@ -76,6 +76,20 @@ for epoch in range(args.nepochs):
         # backpropogate                                                                                                                                                                                    
         loss.backward() # compute the gradients and add them
 ```
+
+The input to the loss function is described as:
+1. `@pred_mask`: is the last output for the convolutional decoder *prior* to 
+the softmax normalization (softmax normalization is done inside the function)
+pred_mask.shape is `[batch,channel,size_h,size_w]`
+2. `@mask_cc` (C): this is the masks that contains the connected components to go over each blob and
+enforce consensus over them. This can be same as the label mask or different. Please, refer to Fig. 2 in the paper in the case they are different from the labels
+mask_cc.shape is `[batch,1,size_h,size_w]`
+3. `@mask_class` (y): is the the target label mask as usual in semantic segmentation. Each pixel indicates the index of the class label for that pixel.
+mask_class.shape is `[batch,1,size_h,size_w]`
+
+#### Hyper-params on the loss
+We shows that the hyper-param `beta` correlates with decreasing the sparsity of the ouput mask on average although in our experimentation when fine-tuning on PartLabel and COFW we found out that increasing `beta` too much may underfit the prediction to the labels. We used a cross-validated ratio of `alpha:beta` as `alpha=10,beta=5` although these values may be dataset dependent.
+Also, it is important to notice that **all the metrics (pixe acc, IoU etc) currently considered in semantic segmentation** do not take sparsity or smoothness into consideration [nor countour measures](http://www.bmva.org/bmvc/2013/Papers/paper0032/paper0032.pdf).
 
 # Part Label Dataset Demo
 One may simply download the repo and play with the provided ipython notebook. 

@@ -32,7 +32,7 @@ _Please, note here the scope is not to get state-of-the-art results on benchmark
 
 # Dependency
 The code is written in python and pytorch. 
-A [requirments.txt](requirments.txt) file is avaialble for reference although it contains also unrelated packages.
+A [requirements.txt](requirements.txt) file is avaialble for reference although it contains also unrelated packages.
   
   - Pytorch: 1.1.0
   - Python: 3.7.5

@@ -77,6 +77,18 @@ for epoch in range(args.nepochs):
         loss.backward() # compute the gradients and add them
 ```
 
+Initialize the class:
+1. `consensus_loss_alpha`: hyper-param that ensures we match the label class
+2. `consensus_loss_beta`: novel hyper-param enforcing consensus
+3. `reduce_pixel`: how to normalize 1st term of Eq. (8) `'idx'` will normalize by size each blob.
+    `'all'` will normalize by `HxW` where `HxW` is the size of the image;`' idx'` is the one used. Please, note that
+       you should NOT use the option `'all'` since from experiments we found out it may underperform because it the 
+       normalized probabilities will not sum up to one anymore; if softmax is applied again will bring into issues of 
+       introducing a temperature in the softmax function, so stick to `idx` option.
+4. `reduce_pixel_kl`: same as above but how to normalize 2nd term of Eq. (8) related to consensus.
+    `'idx'` will normalize by size each blob
+    `'all'` will normalize by `HxW` where `HxW` is the size of the image;` 'idx'` is the one used.
+
 The input to the loss function is described as:
 1. `@pred_mask` **`(Wx)`**: is the last output for the convolutional decoder *prior* to 
 the softmax normalization (softmax normalization is done inside the function)

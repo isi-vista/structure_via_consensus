@@ -112,7 +112,7 @@ Alternatively, one may play with the inference code using [this Google Colab lin
 <img src="imgs/pt_2.png" />
 
 # Contact
-For any paper related questions, please contact `masi@isi.edu`
+For any paper related questions, please contact `masi@isi.edu` or open a Github issues above. Please, note that we do not provide software support besides simply replying to a few questions. Thank you for your understanding.
 
 # [License](LICENSE)
 The Software is made available for academic or non-commercial purposes only. The license is for a copy of the program for an unlimited term. Individuals requesting a license for commercial use must pay for a commercial license.

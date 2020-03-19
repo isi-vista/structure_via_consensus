@@ -20,7 +20,7 @@ If you find our method useuful, please cite it as:
 ```
 
 <img src="imgs/teaser.png" />
-<sub>More regular, smooth structure learned; (a) As the training progresses, our method learns more regular, smooth structure which yields a more regular mask when compared to the pixel-wise baseline (sample from the COFW test set); (b) less sparsity is confirmed by visualization of the error in the number of connected components between the predicted and annotated mask.  A higher weight on beta greatly decreases the sparsity of the masks (c) this effect is confirmed when inspecting qualitative samples from the COFW test set.</sub>
+<sub>More regular, smooth structure learned; (a) As the training progresses, our method learns more regular, smooth structure which yields a more regular mask when compared to the pixel-wise baseline (sample from the COFW test set); (b) less sparsity is confirmed by visualization of the error in the number of connected components between the predicted and annotated mask.  (c) A higher weight on beta greatly decreases the sparsity of the masks on average.</sub>
 
 # Overview
 The gist of the approach is an attempt to induce structure through smoothness in the pixel-wise prediction of a semantic segmentation network trained with a DCNN (Deep Convolutional Neural Networks); the smoothness is enforced for the task of occlusion detection thereby attempting to get occlusion predictions with a better, structured output.
@@ -28,7 +28,7 @@ Later on, the method is also used for other similar tasks such as face parsing w
 
 _Please, note here the scope is not to get state-of-the-art results on benchmarks yet seeking for a solution on how to enforce structure in the pixel-wise prediction of a DCNN and proving that inducing smoothness can be a feasible and promising direction._
 
-Other alternative, very recent attempts with the same objective are, for example, [using CoordConv](https://papers.nips.cc/paper/8169-an-intriguing-failing-of-convolutional-neural-networks-and-the-coordconv-solution) or using [Adversarial Structure Matching method](https://jyhjinghwang.github.io/projects/asm.html)
+
 
 # Dependency
 The code is written in python and pytorch.

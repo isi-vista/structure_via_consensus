@@ -78,13 +78,13 @@ for epoch in range(args.nepochs):
 ```
 
 The input to the loss function is described as:
-1. `@pred_mask`: is the last output for the convolutional decoder *prior* to 
+1. `@pred_mask` **`(Wx)`**: is the last output for the convolutional decoder *prior* to 
 the softmax normalization (softmax normalization is done inside the function)
 pred_mask.shape is `[batch,channel,size_h,size_w]`
-2. `@mask_cc` (C): this is the masks that contains the connected components to go over each blob and
+2. `@mask_cc` **`(C)`**: this is the masks that contains the connected components to go over each blob and
 enforce consensus over them. This can be same as the label mask or different. Please, refer to Fig. 2 in the paper in the case they are different from the labels
 mask_cc.shape is `[batch,1,size_h,size_w]`
-3. `@mask_class` (y): is the the target label mask as usual in semantic segmentation. Each pixel indicates the index of the class label for that pixel.
+3. `@mask_class` **`(y)`**: is the the target label mask as usual in semantic segmentation. Each pixel indicates the index of the class label for that pixel.
 mask_class.shape is `[batch,1,size_h,size_w]`
 
 #### Hyper-params on the loss

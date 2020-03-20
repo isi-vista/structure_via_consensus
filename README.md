@@ -54,11 +54,16 @@ pip install git+https://github.com/isi-vista/structure_via_consensus/loss_packag
 ```python
 from structure_via_consensus import StructureConsensuLossFunction
 
+consensus_loss_alpha=10.0
+consensus_loss_beta=5.0
+reduce_pixel='idx'
+reduce_pixel_kl='idx'
+
 ## Define new loss                                                                 
-loss_func = StructureConsensuLossFunction(args.consensus_loss_alpha,                                   
-                                     args.consensus_loss_beta,                                            
-                                     reduce_pixel=args.reduce_pixel,                                                        
-                                     reduce_pixel_kl=args.reduce_pixel_kl                                          
+loss_func = StructureConsensuLossFunction(consensus_loss_alpha,                                   
+                                     consensus_loss_beta,                                            
+                                     reduce_pixel=reduce_pixel,                                                        
+                                     reduce_pixel_kl=reduce_pixel_kl                                          
 )
 
 for epoch in range(args.nepochs):                                                     

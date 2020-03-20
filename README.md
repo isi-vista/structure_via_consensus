@@ -69,9 +69,9 @@ for epoch in range(args.nepochs):
         mask_cc = mask_class.clone().cuda()                                           
         ## prediction                                                                                                                               
         pred_mask = model(img)                      
-        # calculate losses                                              
-        loss = loss_func(pred_mask,mask_cc,mask_class)                 
-        # backpropogate                   
+        # calculate losses
+        loss = loss_func(pred_mask,mask_cc,mask_class)
+        # backpropogate
         loss.backward() # compute the gradients and add them
 ```
 

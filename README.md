@@ -7,6 +7,8 @@ This is the official repo for the Structure via Consensus for Face Segmentation 
 
 For method details, please refer to [this pre-print version of the paper on arxiv](https://arxiv.org/abs/1911.00957).
 
+<img src='imgs/final_paper.png' />
+
 If you find our method useuful, please cite it as:
 
 ```latex

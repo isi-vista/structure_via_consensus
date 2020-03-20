@@ -52,29 +52,26 @@ pip install git+https://github.com/isi-vista/structure_via_consensus/loss_packag
 ### Typical Usage
 
 ```python
-from structure_via_consensus import StructureConsensuLossFunction 
+from structure_via_consensus import StructureConsensuLossFunction
 
-## Define new loss                                                                                                                                                                                         
-loss_func = StructureConsensuLossFunction(args.consensus_loss_alpha,                                                                                                                                       
-                                     args.consensus_loss_beta,                                                                                                                                             
-                                     reduce_pixel=args.reduce_pixel,                                                                                                                                       
-                                     reduce_pixel_kl=args.reduce_pixel_kl                                                                                                                                  
-) 
+## Define new loss                                                                 
+loss_func = StructureConsensuLossFunction(args.consensus_loss_alpha,                                   
+                                     args.consensus_loss_beta,                                            
+                                     reduce_pixel=args.reduce_pixel,                                                        
+                                     reduce_pixel_kl=args.reduce_pixel_kl                                          
+)
 
-for epoch in range(args.nepochs):                                                                                                                                                                          
-    for ib, batch in enumerate(train_dataloader):                                                                                                                                                          
-        img, mask_class, mask_sp = batch                                                                                                                                                                   
-        img = img.cuda()                                                                                                                                                                                   
-        mask_class = mask_class.cuda()                                                                                                                                                                     
-        mask_cc = mask_class.clone().cuda()                                                                                                                                                                
-
+for epoch in range(args.nepochs):                                                     
+    for ib, batch in enumerate(train_dataloader):                                                        
+        img, mask_class, mask_sp = batch                                              
+        img = img.cuda()                                                          
+        mask_class = mask_class.cuda()                                                  
+        mask_cc = mask_class.clone().cuda()                                           
         ## prediction                                                                                                                               
-        pred_mask = model(img)                                                                                                                                                                  
-
-        # calculate losses                                                                                                                                                                                 
-        loss = loss_func(pred_mask,mask_cc,mask_class)                                                                                                                                                 
-
-        # backpropogate                                                                                                                                                                                    
+        pred_mask = model(img)                      
+        # calculate losses                                              
+        loss = loss_func(pred_mask,mask_cc,mask_class)                 
+        # backpropogate                   
         loss.backward() # compute the gradients and add them
 ```
 

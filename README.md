@@ -1,4 +1,4 @@
-# Learning Structure via Consensus for Face Segmentation and Parsing
+# Towards Learning Structure via Consensus for Face Segmentation and Parsing
 <img src="https://www.isi.edu/images/isi-logo.jpg" width="200"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://cvpr2020.thecvf.com/sites/default/files/CVPR_Logo_Horz2_web.jpg" width="200"/>
 
 This is the official repo for the Structure via Consensus for Face Segmentation and Parsing (CVPR 2020). 
@@ -13,7 +13,7 @@ If you find our method useuful, please cite it as:
 
 ```latex
   @inproceedings{masi2020structure,
-      title={{L}earning {S}tructure via {C}onsensus for {F}ace {S}egmentation and {P}arsing},
+      title={{T}owards {L}earning {S}tructure via {C}onsensus for {F}ace {S}egmentation and {P}arsing},
       author={Masi, Iacopo and Mathai, Joe and AbdAlmageed, Wael},
       booktitle={The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
       year={2020},

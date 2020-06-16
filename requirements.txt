@@ -204,7 +204,7 @@ urllib3==1.24.3
 urwid==2.1.0
 wcwidth==0.1.7
 webencodings==0.5.1
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 widgetsnbextension==3.4.2
 wrapt==1.11.2
 xlrd==1.1.0

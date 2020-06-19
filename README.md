@@ -1,9 +1,9 @@
 # Towards Learning Structure via Consensus for Face Segmentation and Parsing
 <img src="https://www.isi.edu/images/isi-logo.jpg" width="200"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://cvpr2020.thecvf.com/sites/default/files/CVPR_Logo_Horz2_web.jpg" width="200"/>
 
+[![report](https://img.shields.io/badge/arxiv-report-red)](https://arxiv.org/pdf/1911.00957.pdf)   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-FPLP9uktfW5lXZ0-BgaIoz8nVZZAgoa)
+
 This is the official repo for the Structure via Consensus for Face Segmentation and Parsing (CVPR 2020). 
-
-
 
 For method details, please refer to the [paper](http://openaccess.thecvf.com/content_CVPR_2020/papers/Masi_Towards_Learning_Structure_via_Consensus_for_Face_Segmentation_and_Parsing_CVPR_2020_paper.pdf) and the [supplementary material](http://openaccess.thecvf.com/content_CVPR_2020/supplemental/Masi_Towards_Learning_Structure_CVPR_2020_supplemental.pdf).
 

@@ -7,7 +7,7 @@ This is the official repo for the Structure via Consensus for Face Segmentation 
 
 For method details, please refer to the [paper](http://openaccess.thecvf.com/content_CVPR_2020/papers/Masi_Towards_Learning_Structure_via_Consensus_for_Face_Segmentation_and_Parsing_CVPR_2020_paper.pdf) and the [supplementary material](http://openaccess.thecvf.com/content_CVPR_2020/supplemental/Masi_Towards_Learning_Structure_CVPR_2020_supplemental.pdf).
 
-<iframe width="500" height="281" src="https://www.youtube.com/embed/oDNkPIL1AS0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="500" height="281" src="https://www.youtube.com/embed/oDNkPIL1AS0?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 <img src='imgs/final_paper.png' />

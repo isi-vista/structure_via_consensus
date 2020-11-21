@@ -1,5 +1,5 @@
-# Towards Learning Structure via Consensus for Face Segmentation and Parsing
-<img src="https://www.isi.edu/images/isi-logo.jpg" width="200"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://cvpr2020.thecvf.com/sites/default/files/CVPR_Logo_Horz2_web.jpg" width="200"/>
+## Towards Learning Structure via Consensus for Face Segmentation and Parsing
+<img src="http://cvpr2020.thecvf.com/sites/default/files/CVPR_Logo_Horz2_web.jpg" width="200"/>
 
 [![report](https://img.shields.io/badge/arxiv-report-red)](https://arxiv.org/pdf/1911.00957.pdf)   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-FPLP9uktfW5lXZ0-BgaIoz8nVZZAgoa)
 
@@ -34,7 +34,7 @@ _Please, note here the scope is not to get state-of-the-art results on benchmark
 
 # Dependency
 The code is written in python and pytorch. 
-A [requirements.txt](requirements.txt) file is avaialble for reference although it contains also unrelated packages.
+A [requirements.txt](https://github.com/isi-vista/structure_via_consensus/blob/master/requirements.txt) file is avaialble for reference although it contains also unrelated packages.
   
   - Pytorch: 1.1.0
   - Python: 3.7.5
@@ -109,7 +109,7 @@ We shows that the hyper-param `beta` correlates with decreasing the sparsity of 
 Also, it is important to notice that **all the metrics (pixel acc., IoU, etc) currently considered in semantic segmentation** do not take sparsity or smoothness into consideration [nor countour measures](http://www.bmva.org/bmvc/2013/Papers/paper0032/paper0032.pdf).
 
 # Part Label Dataset Demo
-One may simply download the repo and play with the provided ipython notebook [eval_model_pt_labels_colab.ipynb](eval_model_pt_labels_colab.ipynb).
+One may simply download the repo and play with the provided ipython notebook [eval_model_pt_labels_colab.ipynb](https://github.com/isi-vista/structure_via_consensus/blob/master/eval_model_pt_labels_colab.ipynb).
 
 Alternatively, one may play with the inference code using [this Google Colab link](https://colab.research.google.com/drive/1-FPLP9uktfW5lXZ0-BgaIoz8nVZZAgoa).
 

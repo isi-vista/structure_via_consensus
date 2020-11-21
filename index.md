@@ -13,7 +13,7 @@ If you find our method useuful, please cite it as:
 
 ```latex
   @inproceedings{masi2020structure,
-      title={ {T}owards {L}earning {S}tructure via {C}onsensus for {F}ace {S}egmentation and {P}arsing},
+      title={ Towards Learning Structure via Consensus for Face Segmentation and Parsing},
       author={Masi, Iacopo and Mathai, Joe and AbdAlmageed, Wael},
       booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)},
       year={2020},
